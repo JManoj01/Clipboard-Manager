@@ -1,40 +1,52 @@
-🖋️ Terminal Clipboard Manager
+# 🖋️ Terminal Clipboard Manager
 
-A cross-platform clipboard manager built in Go with a beautiful Bubble Tea TUI, stylish Lipgloss design, and syntax highlighting via Chroma.
-Supports Linux, macOS, and Windows.
+A **cross-platform clipboard manager** built in Go with a beautiful **Bubble Tea TUI**, stylish **Lipgloss design**, and **syntax highlighting** via Chroma. Supports **Linux, macOS, and Windows**.
 
-✨ Features
+---
 
-📋 Browse and search clipboard history directly from your terminal
+## ✨ Features
 
-🔍 Fuzzy search for fast lookup
+### 📋 Browse & Search
+Browse and search **clipboard history** directly from your terminal.
 
-🧠 Auto-categorization by content type (code, text, images, etc.)
+### 🔍 Fuzzy Search
+Fast lookup with **fuzzy search**.
 
-💾 Persistent storage using JSON
+### 🧠 Auto-categorization
+Automatically categorize by content type (**code, text, images, etc.**).
 
-🎨 Syntax highlighting powered by Chroma
+### 💾 Persistent Storage
+Uses **JSON** to store clipboard history locally.
 
-⚡ Handles 1,000+ entries with duplicate detection
+### 🎨 Syntax Highlighting
+**Chroma** powers syntax highlighting for code snippets.
 
-📤 Export functionality for text and image history
+### ⚡ High Capacity
+Handles **1,000+ entries** with **duplicate detection**.
 
+### 📤 Export Functionality
+Export **text and image history** easily.
 
+---
 
-🧰 Requirements
+## 🧰 Requirements
 
-Go 1.21+
+- **Go 1.21+**
+- Clipboard access enabled on your system:
+  - Linux: `xclip` / `xsel`  
+  - macOS: built-in `pbcopy` / `pbpaste`
 
-Clipboard access enabled on your system (e.g., xclip/xsel on Linux, built-in pbcopy/pbpaste on macOS)
+---
 
-🚀 Installation & Usage
-1. Build the executable
+## 🚀 Installation & Usage
+
+### 1️⃣ Build the Executable
+```bash
 go build -o clipboard_manager
 
-2. Run the program
+
+# 2️⃣ Run the Program
 ./clipboard_manager
-
-
 
 ⚙️ Configuration
 
@@ -44,16 +56,3 @@ Clipboard history and configuration are stored in a backup JSON file:
 
 
 You can edit or back up this file as needed.
-
-🧩 Tech Stack
-Component	Description
-Go	Core programming language
-Bubble Tea	Interactive terminal UI framework
-Lipgloss	Stylish terminal UI styling
-Chroma	Syntax highlighting for code snippets
-JSON	Local data storage format
-
-
-📜 License
-
-MIT License © 2025 Justin Manoj
